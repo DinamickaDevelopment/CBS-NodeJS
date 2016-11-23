@@ -1,0 +1,9 @@
+{
+  "name": "002_path",
+  "version": "0.0.0",
+  "description": "002_path",
+  "main": "app.js",
+  "author": {
+    "name": "Oleksandr Petryk"
+  }
+}

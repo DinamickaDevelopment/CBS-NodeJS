@@ -1,0 +1,63 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "001_lesson32_todoapp_edit_items", "001_lesson32_todoapp_edit_items\001_lesson32_todoapp_edit_items.njsproj", "{A7C4D696-DCC7-4748-ACAD-07D9130DFBCF}"
+EndProject
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "002_lesson32_todoapp_edit_delete_items", "002_lesson32_todoapp_edit_delete_items\002_lesson32_todoapp_edit_delete_items.njsproj", "{0B94E914-F05C-4E82-9334-236ADB9BBC93}"
+EndProject
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "003_lesson32_cookies_basic", "003_lesson32_cookies_basic\003_lesson32_cookies_basic.njsproj", "{8A0F072A-96B6-4687-AF33-76D9FDA74D40}"
+EndProject
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "004_lesson32_cookies_signed", "004_lesson32_cookies_signed\004_lesson32_cookies_signed.njsproj", "{6DE3EC2F-AE2B-4EBE-9511-6E82D713766F}"
+EndProject
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "005_lesson32_session_basic", "005_lesson32_session_basic\005_lesson32_session_basic.njsproj", "{9CBF2AD9-4D46-427E-9B94-4CBB30272066}"
+EndProject
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "006_lesson32_session_store", "006_lesson32_session_store\006_lesson32_session_store.njsproj", "{6D8C8741-C7E8-4A87-80F5-CA126E312A46}"
+EndProject
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "007_lesson32_store_methods", "007_lesson32_store_methods\007_lesson32_store_methods.njsproj", "{56C28AE3-CC46-47E1-8C24-80937DA07757}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "db", "db", "{AD6D42AA-F0DF-4D66-8008-EF241C24DB1C}"
+	ProjectSection(SolutionItems) = preProject
+		db\sessions.sql = db\sessions.sql
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A7C4D696-DCC7-4748-ACAD-07D9130DFBCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7C4D696-DCC7-4748-ACAD-07D9130DFBCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7C4D696-DCC7-4748-ACAD-07D9130DFBCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7C4D696-DCC7-4748-ACAD-07D9130DFBCF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B94E914-F05C-4E82-9334-236ADB9BBC93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B94E914-F05C-4E82-9334-236ADB9BBC93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B94E914-F05C-4E82-9334-236ADB9BBC93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B94E914-F05C-4E82-9334-236ADB9BBC93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A0F072A-96B6-4687-AF33-76D9FDA74D40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A0F072A-96B6-4687-AF33-76D9FDA74D40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A0F072A-96B6-4687-AF33-76D9FDA74D40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A0F072A-96B6-4687-AF33-76D9FDA74D40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6DE3EC2F-AE2B-4EBE-9511-6E82D713766F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DE3EC2F-AE2B-4EBE-9511-6E82D713766F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DE3EC2F-AE2B-4EBE-9511-6E82D713766F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DE3EC2F-AE2B-4EBE-9511-6E82D713766F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CBF2AD9-4D46-427E-9B94-4CBB30272066}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CBF2AD9-4D46-427E-9B94-4CBB30272066}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CBF2AD9-4D46-427E-9B94-4CBB30272066}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CBF2AD9-4D46-427E-9B94-4CBB30272066}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D8C8741-C7E8-4A87-80F5-CA126E312A46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D8C8741-C7E8-4A87-80F5-CA126E312A46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D8C8741-C7E8-4A87-80F5-CA126E312A46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D8C8741-C7E8-4A87-80F5-CA126E312A46}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56C28AE3-CC46-47E1-8C24-80937DA07757}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56C28AE3-CC46-47E1-8C24-80937DA07757}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56C28AE3-CC46-47E1-8C24-80937DA07757}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56C28AE3-CC46-47E1-8C24-80937DA07757}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

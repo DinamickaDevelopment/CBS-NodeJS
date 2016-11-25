@@ -28,4 +28,15 @@ console.log(str1); // Hello world:28
 var str2 = util.format('%d', 12345, 'some string');
 // если в функцию format не передано аргументов, соответствующих специальным символам, 
 // форматирующая строка будет заменена аргументами
-console.log(str2);  // 12345 some string
+console.log(str2);  // 12345 some string 
+
+var test_obj = {
+    a: 1, 
+    b: 'hello'
+} 
+
+// альтернативой метода util.format для отображения данных в формате JSON является 
+// метод JSON.stringify 
+var str3 = util.format('%j', test_obj); 
+
+console.log(str3);

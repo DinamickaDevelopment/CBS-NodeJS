@@ -3,7 +3,8 @@
 
 // Метод Buffer.alloc - создает неинициализированный буфер на указанное количество байт
 const buf = Buffer.alloc(10);
-console.log('empty buffer: ');
+console.log('empty buffer: ' + buf); 
+console.log(buf.toString('hex')); // вывод буфера в консоль в шестнадцатеричном формате 
 console.log(buf);  
 
 // Метод Buffer.from(array) - создает буфер на основе массива байтов. 
@@ -14,7 +15,8 @@ console.log('buffer converted to string: ' + buf1.toString()) // buffer  //hex
 // При использовании такого метода буфер и типированный массив ссылаются на один и тот же сегмент памяти 
 var arr = new Uint16Array(10);
 const buf2 = Buffer.from(arr.buffer, 3, 2); // Version of Node.js
-console.log('buffer from array: ' + buf2.length);
+console.log('buffer from array: ' + buf2.length); 
+
 
 // Метод Buffer.from(str[, encoding]) - создает новый буфер, который содержит строку str в указанной кодировке(по умолчанию - utf-8) 
 var buf3 = Buffer.from('Test buffer!');

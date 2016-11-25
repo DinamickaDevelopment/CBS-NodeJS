@@ -1,6 +1,4 @@
-﻿'use strict';
-
-// импорт значений из модуля sample_module
+﻿// импорт значений из модуля sample_module
 const imported_module = require('./sample_module');
 
 // код ниже демонстрирует проблему работы со ссылочным типом данных - 

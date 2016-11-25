@@ -1,6 +1,4 @@
-﻿'use strict'; 
-
-// импорт модуля events
+﻿// импорт модуля events
 const events = require('events');
 
 // создание экземпляра EventEmitter

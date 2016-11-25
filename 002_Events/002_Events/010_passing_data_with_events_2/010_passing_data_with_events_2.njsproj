@@ -3,15 +3,16 @@
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
-    <Name>004_lesson27_module_as_directory_1</Name>
-    <RootNamespace>004_lesson27_module_as_directory_1</RootNamespace>
+    <Name>010_passing_data_with_events_2</Name>
+    <RootNamespace>010_passing_data_with_events_2</RootNamespace>
   </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>105a6324-9155-45c8-af6b-f76cbecf8e79</ProjectGuid>
-    <ProjectHome>.</ProjectHome>
+    <ProjectGuid>9d014e15-1123-4c9a-9489-c78f230f8b68</ProjectGuid>
+    <ProjectHome>
+    </ProjectHome>
     <StartupFile>main.js</StartupFile>
     <SearchPath>
     </SearchPath>
@@ -30,12 +31,6 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="main.js" />
-    <Compile Include="sample_module\index.js" />
-    <Compile Include="sample_module\index1.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="sample_module\" />
     <Folder Include="typings\" />
     <Folder Include="typings\globals\" />
     <Folder Include="typings\globals\node\" />
@@ -43,6 +38,9 @@
   <ItemGroup>
     <TypeScriptCompile Include="typings\globals\node\index.d.ts" />
     <TypeScriptCompile Include="typings\index.d.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="main.js" />
   </ItemGroup>
   <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />

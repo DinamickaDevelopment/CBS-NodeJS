@@ -6,8 +6,6 @@
 //    поиск внутри директории файла package.json и запуск файла, 
 //    указанного в поле main 
 
-'use strict';
-
 var import_module = require('./sample_module');
 
 import_module.printMsg();

@@ -1,7 +1,6 @@
 ﻿// В данном примере показаны свойства объекта module 
 
 // имя файла с модулем
-console.log('module id: ' + module.id);
 console.log('module filename: ' + module.filename);
 
 
@@ -16,7 +15,6 @@ module.exports = {
 
 var module1 = require('./folder/sample_module1');
 
-// boolean - загружен модуль или нет
-console.log('module is loaded: ' + module.loaded);
-
-
+// module.loaded - boolean - свойство, которое указывает, загружен модуль или нет
+console.log('child module is loaded: ' + module.children[0].loaded); // true, дочерний модуль загружен 
+console.log('this module is loaded: ' + module.loaded); // false, при обращении к свойству loaded текущего модуля, его значение всегда false  

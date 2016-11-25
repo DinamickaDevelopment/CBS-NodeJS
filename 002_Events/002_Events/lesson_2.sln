@@ -15,13 +15,15 @@ Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "005_event_methods_2", "005_
 EndProject
 Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "006_event_methods_3", "006_event_methods_3\006_event_methods_3.njsproj", "{7671EC83-BF33-45F3-8E07-A12C0FBC5BA5}"
 EndProject
-Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "010_error_handling", "010_error_handling\010_error_handling.njsproj", "{87E4E4A5-F8E3-47C8-A92D-3D46665016DC}"
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "011_error_handling", "011_error_handling\011_error_handling.njsproj", "{87E4E4A5-F8E3-47C8-A92D-3D46665016DC}"
 EndProject
-Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "007_multiple_listeners", "007_multiple_listeners\007_multiple_listeners.njsproj", "{C5450A3D-8161-4591-BA27-CD6CB3090DF6}"
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "008_multiple_listeners", "008_multiple_listeners\008_multiple_listeners.njsproj", "{C5450A3D-8161-4591-BA27-CD6CB3090DF6}"
 EndProject
-Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "008_passing_data_with_events", "008_passing_data_with_events\008_passing_data_with_events.njsproj", "{F45454ED-3214-4A79-B729-E8082E02F6EA}"
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "009_passing_data_with_events", "009_passing_data_with_events\009_passing_data_with_events.njsproj", "{F45454ED-3214-4A79-B729-E8082E02F6EA}"
 EndProject
-Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "009_passing_data_with_events_2", "009_passing_data_with_events_2\009_passing_data_with_events_2.njsproj", "{9D014E15-1123-4C9A-9489-C78F230F8B68}"
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "010_passing_data_with_events_2", "010_passing_data_with_events_2\010_passing_data_with_events_2.njsproj", "{9D014E15-1123-4C9A-9489-C78F230F8B68}"
+EndProject
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "007_event_methods_4", "007_event_methods_4\007_event_methods_4\007_event_methods_4.njsproj", "{CE8D3E81-E252-4CD4-9376-BDCDBE36D668}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +71,10 @@ Global
 		{9D014E15-1123-4C9A-9489-C78F230F8B68}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9D014E15-1123-4C9A-9489-C78F230F8B68}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9D014E15-1123-4C9A-9489-C78F230F8B68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE8D3E81-E252-4CD4-9376-BDCDBE36D668}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE8D3E81-E252-4CD4-9376-BDCDBE36D668}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE8D3E81-E252-4CD4-9376-BDCDBE36D668}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE8D3E81-E252-4CD4-9376-BDCDBE36D668}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

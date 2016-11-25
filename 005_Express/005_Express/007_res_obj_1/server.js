@@ -13,17 +13,16 @@ app.get('/', function(req, res) {
 	console.log(res.headersSent); //res.headersSent - boolean, true, если заголовки ответа были отправлены 
 
 	// метод res.append позволяет установить заголовки ответа 
-	res.append('Set-Cookie', 'foo=bar; Path=/; HttpOnly');
+    res.append('Set-Cookie', 'foo=bar; Path=/; HttpOnly');
+    res.append('Set-Cookie', 'foo=Mybar; Path=/; HttpOnly');
 	res.append('Warning', '199 Miscellaneous warning'); 
 	// метод res.set делает то же самое 
 	res.set('Cache-Control', 'no-cache'); 
-
+    res.set('Set-Cookie', 'foo=Mybar1111; Path=/; HttpOnly');
 
     res.send('<h1>Sample Response</h1>' + '<h3>' + res.locals.prop1 + '</h3>'); 
 
-	
 }); 
-
 
 app.listen(port, function() {
 	console.log('app running on port ' + port); 

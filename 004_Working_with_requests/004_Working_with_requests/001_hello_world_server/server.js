@@ -6,7 +6,7 @@ const port = process.env.port || 1337; //  порт, указанный при �
 const server = http.createServer(function (request, response) {
 
     // указание заголовков ответа
-    response.writeHead(200, { 'Content-Type': 'text/html' });
+    //response.writeHead(200, { 'Content-Type': 'text/html' });
     // завершить конфигурацию ответа 
     response.end('<h1>Hello World</h1>');
 

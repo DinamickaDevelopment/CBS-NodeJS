@@ -38,5 +38,4 @@ app.get('/', function (req, res) {
     // использование локальных переменных приложения
     res.send('App title: ' + app.locals.title + '<br/>' +
         'App creation date: ' + app.locals.created); 
-
 }) 

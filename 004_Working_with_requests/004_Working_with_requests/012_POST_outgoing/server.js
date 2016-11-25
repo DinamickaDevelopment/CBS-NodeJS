@@ -19,12 +19,10 @@ const server = http.createServer(function(req, res) {
  	 	// создание тела ответа 
  	 	res.writeHead(200, {'Content-Type': 'text/html'}); 
 		res.write(body); 
-		res.end(); 
+		res.end();
 
 		console.log(`data from request: ${body}`); 
  	 });  
-
-
 
 }).listen(port, function () { 
 
@@ -38,8 +36,7 @@ const server = http.createServer(function(req, res) {
         port: port,
         method: 'POST',
         headers: { 'Content-Type': 'text/plain' }
-
-    }; 
+ }; 
 
 
     // сделать запрос на сервер 

@@ -1,3 +1,3 @@
 ﻿module.exports = {
-    printMsg: () => { console.log('Hello from sample module!') }
+    printMsg: () => { console.log('Hello from sample module1!') }
 }; 

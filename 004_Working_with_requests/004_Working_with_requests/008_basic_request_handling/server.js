@@ -11,7 +11,6 @@ http.createServer(function (req, res) {
             console.log(response_text);
             res.end(response_text); 
             
-            
             break
         }
         case 'POST': {

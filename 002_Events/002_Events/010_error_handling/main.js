@@ -4,7 +4,7 @@ var emitter = new events.EventEmitter;
 
 // в nodejs принято устанавливать обработчик на событие error,
 // так как необработанные ошибки прекращают выполнение node приложения 
-emitter.on('error', (err) => {
+emitter.once('error', (err) => {
     console.log(err.message) // вывод текста ошибки на экран
     console.log("Error done");
 });

@@ -3,7 +3,8 @@
 
 // Метод Buffer.alloc - создает неинициализированный буфер на указанное количество байт
 const buf = Buffer.alloc(10);
-console.log('empty buffer: ' + buf);  
+console.log('empty buffer: ');
+console.log(buf);  
 
 // Метод Buffer.from(array) - создает буфер на основе массива байтов. 
 const buf1 = Buffer.from([0x62, 0x75, 0x66, 0x66, 0x65, 0x72]); // создает новый буфер, содержащий ASCII байты

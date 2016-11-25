@@ -31,8 +31,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="main.js" />
-    <Compile Include="sample_module\index1.js" />
     <Compile Include="sample_module\index.js" />
+    <Compile Include="sample_module\index2.js" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="sample_module\" />

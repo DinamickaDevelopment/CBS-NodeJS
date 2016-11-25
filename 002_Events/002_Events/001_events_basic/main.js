@@ -9,7 +9,6 @@ const emitter = new events.EventEmitter;
 // назначение обработчика события 
 emitter.on('event', () => {
     console.log('an event occured!'); 
-
 }); 
 
 // генерация события 'event'

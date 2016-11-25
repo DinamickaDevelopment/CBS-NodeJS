@@ -3,7 +3,7 @@ var app = express();
 
 var port = process.env.port || 1337;
 
-// middleware 
+// middleware
 app.use(function (req, res) {
     res.send('Hello from express!');
 });

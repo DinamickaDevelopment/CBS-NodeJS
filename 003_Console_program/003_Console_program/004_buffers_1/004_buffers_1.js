@@ -10,6 +10,10 @@ console.log(buf);
 // Метод Buffer.from(array) - создает буфер на основе массива байтов. 
 const buf1 = Buffer.from([0x62, 0x75, 0x66, 0x66, 0x65, 0x72]); // создает новый буфер, содержащий ASCII байты, в которых закодировано слово buffer
 console.log('buffer converted to string: ' + buf1.toString()) // buffer  
+
+// Метод Buffer.toString() возвращает строковое представление буфера.Принимает в качестве аргумента название кодировки. Доступные варианты кодировки: 
+//'ascii', 'utf8', 'utf16le', 'ucs2', 'base64', 'latin1', 'binary', 'hex' 
+
 console.log(buf1.toString('hex')); // вывод буфера в консоль в шестнадцатеричном формате 
 
 // Метод Buffer.from(arrayBuffer[, byteOffset[, length]]) - создает буфер на основе буфера типированного массива JS 

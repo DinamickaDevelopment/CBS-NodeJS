@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "001_environment_variables", "001_environment_variables\001_environment_variables.njsproj", "{649062CB-D09C-4876-A221-41564091293B}"
 EndProject
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "002_path", "002_path\002_path.njsproj", "{3477FC72-B674-455D-B2E0-EA91CD78D08B}"
+EndProject
 Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "003_util", "003_util\003_util.njsproj", "{0185C9DF-DE5A-4E2D-9757-48F20122BC29}"
 EndProject
 Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "004_buffers_1", "004_buffers_1\004_buffers_1.njsproj", "{C170ED4B-05A8-4DF6-8EE3-73DF7A813EC7}"
@@ -22,8 +24,6 @@ EndProject
 Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "010_url", "010_url\010_url.njsproj", "{0248997F-788B-4956-90F0-51F25ED06583}"
 EndProject
 Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "011_timers", "011_timeout\011_timers.njsproj", "{E7D64E39-A1FD-4599-BF3C-4E4AA748EBB8}"
-EndProject
-Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "002_path", "002_path\002_path.njsproj", "{3477FC72-B674-455D-B2E0-EA91CD78D08B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -4,7 +4,11 @@
 // Первый элемент - process.ecexPath - абсолютный путь исполняемого файла, запустившего node.js 
 // Второй элемент - путь JS-файла, который исполняется 
 // Оставшиеся элементы - аргументы командной строки
-console.log(`all cmd variables:  ${process.argv}`); 
+
+console.log('cmd variables: '); 
+process.argv.forEach((val, index) => {
+    console.log(`${index}: ${val}`);
+});
 
 console.log(`user variable: ${process.argv[2]}`); 
 

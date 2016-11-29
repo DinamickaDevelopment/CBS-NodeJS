@@ -25,7 +25,7 @@ Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "012_url", "012_url\012_url.
 EndProject
 Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "011_timers", "011_timeout\011_timers.njsproj", "{E7D64E39-A1FD-4599-BF3C-4E4AA748EBB8}"
 EndProject
-Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "010_Streams_3", "010_Streams_3\010_Streams_3\010_Streams_3.njsproj", "{E0C9AACB-7EC4-4B89-A970-315F38CB3745}"
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "010_Streams_3", "010_Streams_3\010_Streams_3.njsproj", "{E0C9AACB-7EC4-4B89-A970-315F38CB3745}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

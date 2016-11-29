@@ -10,7 +10,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>e0c9aacb-7ec4-4b89-a970-315f38cb3745</ProjectGuid>
+    <ProjectGuid>{e0c9aacb-7ec4-4b89-a970-315f38cb3745}</ProjectGuid>
     <ProjectHome>.</ProjectHome>
     <StartupFile>010_Streams_3.js</StartupFile>
     <SearchPath>
@@ -30,13 +30,17 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
-    <Folder Include="typings\" />
-    <Folder Include="typings\globals\" />
-    <Folder Include="typings\globals\node\" />
+    <Content Include="input.txt" />
+    <Content Include="output.txt" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="typings\globals\node\index.d.ts" />
     <TypeScriptCompile Include="typings\index.d.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="typings\" />
+    <Folder Include="typings\globals\" />
+    <Folder Include="typings\globals\node\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="010_Streams_3.js" />

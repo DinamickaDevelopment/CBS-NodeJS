@@ -39,6 +39,7 @@ fs.open('demofile.txt', 'a+', function (err, fd) {
             // position - отступ от начала файла, куда будут записаны данные 
             // callback - функция, принимающая аргументы err, written, string 
 
+        
         fs.write(fd, 'This is the file content!', { encoding: 'utf-8' }, function (err, written, string) {
 
             console.log('writing to file!'); 

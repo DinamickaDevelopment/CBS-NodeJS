@@ -1,57 +1,77 @@
-﻿    // Потоки(Streams) - объекты, которые позволяют считывать данные или записывать данные в источник в непрерывном режиме.
-    // В NodeJS есть 4 типа потоков: 
+﻿    // Потоки(Streams) - объекты, которые позволяют считывать данные или записывать данные в источник в непрерывном режиме. 
+    // 
+    // В NodeJS есть 2 основных вида потоков: 
         // Readable - поток, который используется для операций чтения
         // Writable - поток, который используется для операци записи 
+
+    // Методы потоков асинхронны
 
 var fs = require('fs'); 
 var writeData = 'This is the file content!'; 
 
 // поток для записи данных 
-// генерирует события error(при ошибке), finish(при завершении текущей операции записи данных)
+// генерирует события error(при ошибке), finish(при завершении текущей операции записи данных с помощью метода end)
 var writerStream = fs.createWriteStream('output.txt'); 
 
 writerStream.write(writeData); 
 
-//'finish' событие генерируется после того, как метод stream.end() был вызван
+// событие 'finish' генерируется после того, как был вызван метод stream.end() 
+// событие 'finish' относится только к потокам типа writable
 writerStream.on('finish', function () {
-    console.log('Write completed');
-});
-writerStream.end(); 
+    console.log('writerStream - FINISH'); 
+}); 
+
+// завершить запись данных текущего потока. 
+writerStream.end();  
+
+// writerStream.write('Some more data'); // При попытке записи данных после вызова метода end произойдет ошибка 
  
 
 writerStream.on('error', function(err) {
     console.log(err); 
 });
 
+
+// событие close генерируется при вызове метода stream.close() или методов stream.end() и stream.finish()
 writerStream.on('close', function () {
     console.log("writerStream - CLOSE");
 });
 
-// поток для чтения данных
-// генерирует события error(при ошибке), data(когда данные доступны для чтения), 
-// end(когда больше нет доступных данных для чтения)
-var readData = ''; 
-var readerStream = fs.createReadStream('output.txt', { start: 0, end: 10 });
+// событие finish потока для записи данных 
+writerStream.on('finish', function () {
 
-readerStream.setEncoding('UTF8');
+    // поток для чтения данных
+    // генерирует события error(при ошибке), data(когда данные доступны для чтения), 
+    // end(когда больше нет доступных данных для чтения)
+    var readData = '';
+    var readerStream = fs.createReadStream('output.txt', { start: 0, end: 25 });
 
-readerStream.on('end', function () {
-    console.log(readData);
-});
+    readerStream.setEncoding('UTF8');
 
-readerStream.on('data', function (chunk) {
-    readData += chunk; 
-    console.log('Read completed'); 
-});
+    // событие data генерируется после прочтения данных. Прочитанные данные доступны через аргумент обработчика события 
+    readerStream.on('data', function (chunk) {
 
-writerStream.on('close', function () {
-    console.log("readStream - CLOSE");
-});
+        readData += chunk;
+    });
 
-readerStream.on('error', function (err) {
-    console.log(err);
-}); 
+    readerStream.on('close', function () {
+        console.log("readStream - CLOSE");
+    });
 
+
+    // событие end относится только к потокам типа readable 
+    // происходит когда в потоке не осталось данных для чтения 
+    readerStream.on('end', function () {
+        console.log("readStream - END");
+        console.log(readData);
+    });
+
+    readerStream.on('error', function (err) {
+        console.log(err);
+    });
+
+
+})
 
 
 

@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="/socket.io/socket.io.js"></script>
+    <title>Index</title>
+</head>
+<body>
+    <div class="panel well">
+        <button id="one" class="btn btn-lg btn-warning">Establish Cross Domain Connection</button>
+        <button id="two" class="btn btn-lg btn-warning">Establish Same Origin Connection</button>
+    </div>
+    <div class="panel" id="res">
+
+    </div>
+
+    <script type="text/javascript">
+
+        var res = document.querySelector('#res'); 
+        var btn1 = document.querySelector('button#one'); 
+        var btn2 = document.querySelector('button#two'); 
+
+       
+
+        btn1.onclick = function() {
+             var socket = io.connect('http://localhost:3000'); 
+
+             socket.on('greet', function() {
+                res.innerHTML += 'Hello from localhost:3000 </br>';
+             })
+            }
+        
+
+        btn2.onclick = function() {
+             var socket = io.connect('http://localhost:1337'); 
+
+            socket.on('greet', function() {
+                 res.innerHTML += 'Hello from localhost:1337 </br>'; 
+             })
+        }
+
+    </script>
+</body>
+</html>
